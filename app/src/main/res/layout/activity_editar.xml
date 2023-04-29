@@ -1,0 +1,82 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Editar Proveedor"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etEditarNombre"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Nombre del Proveedor"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/etEditarNumero"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="11"
+        android:hint="Número Teléfono"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEditarEmail" />
+
+    <Button
+        android:id="@+id/btnGuardarCambiosMascota"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Guardar"
+        app:layout_constraintEnd_toStartOf="@+id/btnCancelarEdicionMascota"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEditarNumero" />
+
+    <Button
+        android:id="@+id/btnCancelarEdicionMascota"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnGuardarCambiosMascota"
+        app:layout_constraintTop_toBottomOf="@+id/etEditarNumero" />
+
+    <EditText
+        android:id="@+id/etEditarEmail"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="11"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEditarNombre" />
+</android.support.constraint.ConstraintLayout>
