@@ -45,7 +45,8 @@ public class ProveedorController {
         // where id...
         String campoParaActualizar = "id = ?";
         String[] argumentosParaActualizar = {String.valueOf(proveedor.getId())};
-        return baseDeDatos.update(NOMBRE_TABLA, valoresParaActualizar, campoParaActualizar, argumentosParaActualizar);
+        return baseDeDatos.update(NOMBRE_TABLA, valoresParaActualizar,
+                campoParaActualizar, argumentosParaActualizar);
     }
 
     public ArrayList<Proveedor> obtenerProveedores() {
